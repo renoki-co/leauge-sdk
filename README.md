@@ -1,17 +1,15 @@
-Package Name Here
-===================================
+RIOT Games PHP SDK
+==================
 
 ![CI](https://github.com/renoki-co/league-sdk/workflows/CI/badge.svg?branch=master)
 [![codecov](https://codecov.io/gh/renoki-co/league-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/renoki-co/league-sdk/branch/master)
-[![StyleCI](https://github.styleci.io/repos/:styleci_code/shield?branch=master)](https://github.styleci.io/repos/:styleci_code)
+[![StyleCI](https://github.styleci.io/repos/325824643/shield?branch=master)](https://github.styleci.io/repos/325824643)
 [![Latest Stable Version](https://poser.pugx.org/renoki-co/league-sdk/v/stable)](https://packagist.org/packages/renoki-co/league-sdk)
 [![Total Downloads](https://poser.pugx.org/renoki-co/league-sdk/downloads)](https://packagist.org/packages/renoki-co/league-sdk)
 [![Monthly Downloads](https://poser.pugx.org/renoki-co/league-sdk/d/monthly)](https://packagist.org/packages/renoki-co/league-sdk)
 [![License](https://poser.pugx.org/renoki-co/league-sdk/license)](https://packagist.org/packages/renoki-co/league-sdk)
 
-**Note:** Replace  ```:package_description``` ```:styleci_code``` with their correct values in [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE](LICENSE) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+League SDK is a PHP-based SDK that works with RIOT Games API in an object-oriented manner. It comes with support for Static Data, DataDragon and easy calls to the API.
 
 ## 🤝 Supporting
 

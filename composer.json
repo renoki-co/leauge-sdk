@@ -1,7 +1,7 @@
 {
     "name": "renoki-co/league-sdk",
-    "description": ":package_description",
-    "keywords": ["laravel", "php"],
+    "description": "League SDK is a PHP-based SDK that works with RIOT Games API in an object-oriented manner.",
+    "keywords": ["laravel", "php", "riot", "games", "sdk", "league", "of", "legends", "datadragon"],
     "license": "Apache-2.0",
     "homepage": "https://github.com/renoki-co/league-sdk",
     "authors": [
