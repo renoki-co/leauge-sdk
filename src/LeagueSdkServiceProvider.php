@@ -20,6 +20,9 @@ class LeagueSdkServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/league-sdk.php', 'league-sdk'
         );
+
+        LeagueSdk::setCacheStore(config('league-sdk.cache.store'));
+        LeagueSdk::setCacheDuration(config('league-sdk.cache.duration'));
     }
 
     /**
