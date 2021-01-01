@@ -38,7 +38,6 @@ class DragonTest extends TestCase
         foreach ($champion->getSpells() as $spell) {
             $this->assertInstanceOf(ChampionSpell::class, $spell);
             $this->assertTrue(is_array($spell->toArray()));
-
         }
     }
 

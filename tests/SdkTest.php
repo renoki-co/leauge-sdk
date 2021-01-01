@@ -2,11 +2,11 @@
 
 namespace RenokiCo\LeagueSdk\Test;
 
-use RenokiCo\LeagueSdk\Instances\Season;
-use RenokiCo\LeagueSdk\Instances\Queue;
-use RenokiCo\LeagueSdk\Instances\Map;
 use RenokiCo\LeagueSdk\Instances\GameMode;
 use RenokiCo\LeagueSdk\Instances\GameType;
+use RenokiCo\LeagueSdk\Instances\Map;
+use RenokiCo\LeagueSdk\Instances\Queue;
+use RenokiCo\LeagueSdk\Instances\Season;
 use RenokiCo\LeagueSdk\StaticData;
 
 class SdkTest extends TestCase
