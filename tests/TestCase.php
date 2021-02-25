@@ -30,5 +30,6 @@ abstract class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         $app['config']->set('app.key', 'wslxrEFGWY6GfGhvN9L3wH3KSRJQQpBD');
+        $app['config']->set('league-sdk.token', getenv('LEAGUE_SDK_TOKEN'));
     }
 }

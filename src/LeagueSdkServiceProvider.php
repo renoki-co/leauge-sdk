@@ -23,6 +23,7 @@ class LeagueSdkServiceProvider extends ServiceProvider
 
         LeagueSdk::setCacheStore(config('league-sdk.cache.store'));
         LeagueSdk::setCacheDuration(config('league-sdk.cache.duration'));
+        LeagueSdk::setToken(config('league-sdk.token'));
     }
 
     /**

@@ -2,6 +2,9 @@
 
 namespace RenokiCo\LeagueSdk;
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\RequestOptions;
 use Illuminate\Support\Str;
 
 class LeagueSdk
@@ -38,6 +41,13 @@ class LeagueSdk
     public static $cacheDuration = 3600;
 
     /**
+     * The token for API access.
+     *
+     * @var string
+     */
+    protected static $token;
+
+    /**
      * Set the cache store class for caching.
      *
      * @param  string  $class
@@ -58,6 +68,17 @@ class LeagueSdk
     public static function setCacheDuration(int $seconds)
     {
         static::$cacheDuration = $seconds;
+    }
+
+    /**
+     * Set the token for API calls.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public static function setToken(string $token)
+    {
+        static::$token = $token;
     }
 
     /**
@@ -87,5 +108,24 @@ class LeagueSdk
         }
 
         return call_user_func($callback);
+    }
+
+    public static function client(
+        string $region = null,
+        string $game = null,
+        string $resource = null,
+        string $version = null
+    ) {
+        $region = $region ?: static::NA1;
+
+        $options = [
+            'base_uri' => "https://{$region}.api.riotgames.com/{$game}/{$resource}/{$version}",
+            RequestOptions::HEADERS => [
+                'X-Riot-Token' => static::$token,
+            ],
+            RequestOptions::VERIFY => true,
+        ];
+
+        return new Client($options);
     }
 }

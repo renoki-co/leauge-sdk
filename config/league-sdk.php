@@ -10,4 +10,6 @@ return [
 
     ],
 
+    'token' => env('LEAGUE_SDK_TOKEN'),
+
 ];
